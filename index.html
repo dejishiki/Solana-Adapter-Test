@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Wallet Adapter Test</title>
+    <!-- Solana Web3.js -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <!-- Solana Wallet Adapter and Phantom Adapter -->
+    <script src="https://unpkg.com/@solana/wallet-adapter-base/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/@solana/wallet-adapter-wallets/dist/index.umd.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:disabled {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solana Wallet Adapter Test</h1>
+    <button class="button" id="connect-wallet">Connect Wallet</button>
+    <div id="wallet-info"></div>
+    <button class="button" id="send-sol" disabled>Send 0.01 SOL</button>
+
+    <!-- Include your script.js file -->
+    <script src="script.js"></script>
+</body>
+</html>
